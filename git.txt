@@ -1,0 +1,140 @@
+Microsoft Windows [Version 10.0.15063]
+(c) 2017 Microsoft Corporation. All rights reserved.
+
+C:\xampp\htdocs\example\gitExample>git config --global user.name "sabeer zabi"
+
+C:\xampp\htdocs\example\gitExample>git config --global user.email sabeerzabi@gmail.com
+
+C:\xampp\htdocs\example\gitExample>git config --global push.default matching
+
+C:\xampp\htdocs\example\gitExample>git config --global alias.co checkout
+
+C:\xampp\htdocs\example\gitExample>git init
+Initialized empty Git repository in C:/xampp/htdocs/example/gitExample/.git/
+
+C:\xampp\htdocs\example\gitExample>git add .
+warning: LF will be replaced by CRLF in .idea/gitExample.iml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in .idea/modules.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in .idea/vcs.xml.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory.
+
+C:\xampp\htdocs\example\gitExample>git commit -am "initial commit"
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory.
+[master (root-commit) 89c639f] initial commit
+ 5 files changed, 278 insertions(+)
+ create mode 100644 .idea/gitExample.iml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 index.php
+
+====================================GIT BASH====================================================
+$ ssh-keygen -t rsa
+================================================================================================
+
+C:\Users\tech\.ssh>php id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDMOG1En853cjXseXjRsr42ByBC9yUeydi5kbhB8X/Bjb+88MMofVhi10Pj7i9R5BgmED0fdlM4f9xinGGIBhcTyXNDp1w/oI0KykhwLvToO7waUfNKNmNS9pgOOW+IZSqXAXGzIhcenEoXjZ
+atcjdMKkVRf0U9fLtwVxKST/eeLi8MOgzx2EjQ07o805sUbTq5TPbAnuSXaowcv+ZW/fAkMUDOn7Hxr26wLwIYgDkbqyc5YigxJWpTF7E6jYSxUdw5E7tlby8HA+ZBEoDOfkOWgcD2WuuQ+A+7cTULa/WrAfb3PTPVSNzhQSy+e15SdvX9ZmDY
+UJq/JSO6IP5cORX54 tech@IcreativeMind
+
+(copy:A)
+=========================================GITHUB ==============================================
+signin->settings->git ssh key ->(Fill title And Key above content (paste:A))
+create new repository
+- git remote add origin https://github.com/sabeerzabi/php-cource.git (copy:B)
+- git push -u origin master (copy:C)
+
+==============================================================================================
+
+=====================================GIT BASH===================================================
+$ ssh -T git@github.com
+================================================================================================
+
+C:\xampp\htdocs\example\gitExample>git remote add origin https://github.com/sabeerzabi/php-cource.git (paste:B)
+
+C:\xampp\htdocs\example\gitExample>git push -u origin master (paste:C)(login)
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 3.64 KiB | 155.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/sabeerzabi/php-cource.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+
+======================================SECOND COMMIT========================
+
+C:\xampp\htdocs\example\gitExample>git add .
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory.
+
+C:\xampp\htdocs\example\gitExample>git commit -am "second page"
+[master 5ba7c59] second page
+ 2 files changed, 91 insertions(+), 15 deletions(-)
+ create mode 100644 test.php
+
+C:\xampp\htdocs\example\gitExample>git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.29 KiB | 189.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/sabeerzabi/php-cource.git
+   89c639f..5ba7c59  master -> master
+
+
+================================================================================
+
+======================================THIRD COMMIT========================
+
+C:\xampp\htdocs\example\gitExample>git add .
+warning: LF will be replaced by CRLF in .idea/workspace.xml.
+The file will have its original line endings in your working directory.
+
+C:\xampp\htdocs\example\gitExample>git commit -am "second page modify"
+[master c72f6cd] second page modify
+ 2 files changed, 4 insertions(+), 5 deletions(-)
+
+C:\xampp\htdocs\example\gitExample>git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 479 bytes | 28.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/sabeerzabi/php-cource.git
+   5ba7c59..c72f6cd  master -> master
+
+=============================================================================
+===============================COMMIT LIST=================================
+
+C:\xampp\htdocs\example\gitExample>git log
+commit c72f6cd04cf032b4e7da1ba902afe197789e0f97 (HEAD -> master, origin/master)
+Author: sabeer zabi <sabeerzabi@gmail.com>
+Date:   Thu Jan 4 10:31:35 2018 +0530
+
+    second page modify
+
+commit 5ba7c59573a64c322776953a59966837c924e1b1
+Author: sabeer zabi <sabeerzabi@gmail.com>
+Date:   Thu Jan 4 10:29:21 2018 +0530
+
+    second page
+
+    second page
+    second page
+commit 89c639fc3944affe10b1f6defa4fe3d1e5dd1b7a
+Author: sabeer zabi <sabeerzabi@gmail.com>
+Date:   Thu Jan 4 09:42:46 2018 +0530
+
+:
+    initial commit
+(END)
+================================================================================
