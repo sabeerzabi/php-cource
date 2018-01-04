@@ -137,3 +137,14 @@ Date:   Thu Jan 4 09:42:46 2018 +0530
     initial commit
 (END)
 ================================================================================
+=============================COMMENT============================================
+git push original master //upload all files
+git clone https://github.com/sabeerzabi/php-cource.git //download
+git add . //select folder or file
+git commit -am "comment discription" //save to local -am(add,modify)
+git pull // add new file into github
+git push // add all changes into github
+git status -s // list unsaved files from local git
+git stash save // move last version and current files save
+git stash list // list all saved stash
+git stash pop // back to current files
