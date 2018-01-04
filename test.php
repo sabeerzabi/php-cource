@@ -1,3 +1,3 @@
 <?php
-    echo "second page";
+    echo "second page edited";
 ?>
