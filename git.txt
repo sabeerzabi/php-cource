@@ -148,4 +148,10 @@ git status -s // list unsaved files from local git
 git stash save // move last version and current files save
 git stash list // list all saved stash
 git stash pop // back to current files
-====
+git cheackout HEAD -- index.php // from last git
+git rm --cached .idea/* // remove all files from catched list
+git format-patch -1 // create patch file modified
+git apply 0001-Added-my_strcat-function.patch // apply patch file modified
+git branch //list allbranch
+git branch new_branch //add branch
+git checkout new_branch //switch to another branch.
