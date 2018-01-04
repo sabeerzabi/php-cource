@@ -127,7 +127,6 @@ Author: sabeer zabi <sabeerzabi@gmail.com>
 Date:   Thu Jan 4 10:29:21 2018 +0530
 
     second page
-
     second page
     second page
 commit 89c639fc3944affe10b1f6defa4fe3d1e5dd1b7a
